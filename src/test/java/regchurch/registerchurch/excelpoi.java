@@ -13,7 +13,7 @@ public class excelpoi {
 
 	@DataProvider(name="exceldatatest")
 	@Test
-	public static void excelpoitesting() throws IOException
+	public static Object[][] excelpoitesting() throws IOException
 	{
 		
 		File file = new File("C:\\Users\\lsupr\\eclipse-workspace\\registerchurch\\exceldata.xlsx");
@@ -22,16 +22,19 @@ public class excelpoi {
 		XSSFWorkbook excel = new XSSFWorkbook(fis);
 		XSSFSheet sheet = excel.getSheet("one");
 		
-		int noofrows = sheet.getPhysicalNumberOfRows();
+		int noofrows = sheet.getLastRowNum();
 		int noofcols = sheet.getRow(1).getLastCellNum();
 		System.out.println(noofrows+ "--" +noofcols);
+		Object[][] data = new Object[noofrows][noofcols];
 		for(int i=1;i<=noofrows;i++)
 		{
 			XSSFRow celldata = sheet.getRow(i);
 			String FirstName = celldata.getCell(0).getStringCellValue();
 			String LastName = celldata.getCell(1).getStringCellValue();
 			System.out.println(FirstName+ " -- " +LastName);
+			return data;
 		}
+		return data;
 	}
 	
 }	

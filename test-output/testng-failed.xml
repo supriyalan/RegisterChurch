@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="regchurch.registerchurch.RegisterVbs">
+      <class name="regchurch.registerchurch.excelpoi">
         <methods>
-          <include name="loginwithurl"/>
-          <include name="birthday"/>
-          <include name="teardown"/>
+          <include name="excelpoitesting"/>
         </methods>
-      </class> <!-- regchurch.registerchurch.RegisterVbs -->
+      </class> <!-- regchurch.registerchurch.excelpoi -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

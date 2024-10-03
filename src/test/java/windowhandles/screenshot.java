@@ -23,7 +23,7 @@ public class screenshot {
 		driver.get("https://www.google.com/"); */
 		
 		File sourcefile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String Destinationfile = ("screenshots\\screenshot0000.png");
+		String Destinationfile = ("screenshots\\screenshot.png");
 		try {
 			FileHandler.copy(sourcefile, new File(Destinationfile));
 		} catch (IOException e) {
