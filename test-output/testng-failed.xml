@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="regchurch.registerchurch.excelpoi">
+      <class name="forDTCC.PrintDataTable">
         <methods>
-          <include name="excelpoitesting"/>
+          <include name="uploadFile"/>
         </methods>
-      </class> <!-- regchurch.registerchurch.excelpoi -->
+      </class> <!-- forDTCC.PrintDataTable -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -10,8 +10,8 @@
       	</class>
       <class name="regchurch.registerchurch.AlertTesting">
       <methods>
-      <include name = "alertyes"/>
-      <include name = "alertno"/>
+     		 <include name = "alertyes"/>
+     		 <include name = "alertno"/>
       </methods>
        </class>
       <class name="windowhandles.windows"/>
